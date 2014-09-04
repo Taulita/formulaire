@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>FORMULAIRE</title>
+
+		<!-- Fonts -->
+		<link rel="stylesheet" type="text/css" href="sources/font/font-awesome/css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="sources/font/opensans_regular/stylesheet.css">
+
+		<!-- Styles -->
+		<link rel="stylesheet" type="text/css" href="sources/css/reset.css">
+	    <link rel="stylesheet" type="text/css" href="sources/css/bootstrap.css">
+	    <link rel="stylesheet" type="text/css" href="sources/css/bootstrap-responsive.css">
+		<link rel="stylesheet" type="text/css" href="sources/css/stylesheet.css">
+		
+
+		<!-- Scripts -->
+		<script src="sources/js/jquery.js"></script>
+		<script src="sources/js/bootstrap.js"></script>
+  	</head>
+  
+ 	<body>
+  		<div class="content">
+
+		    <header class='container-fluid'>
+		      <?php require('apps/header.php'); ?>	
+			</header>
+
+		    <section class='container-fluid'>
+		      <?php require('apps/'.$page.'.php'); ?>	
+			</section>
+				
+		    <footer class="container-fluid">
+		      <?php require('apps/footer.php'); ?>
+			</footer>
+
+	  	</div>
+		<script type="text/javascript" src="sources/js/script.js"></script>
+	</body>
+</html>
+
+

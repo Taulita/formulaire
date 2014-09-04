@@ -1,0 +1,86 @@
+<div class="div-center">
+	<?php
+		if($error!="")
+		{
+		?>
+	<div class="alert alert-error">
+    	<strong><?=$error?></strong> 
+    </div>
+    <?php
+		}
+		?>
+	<form action="index.php?page=form" method="POST" class="form-horizontal">
+		<fieldset>
+			<legend>
+				<h2 class="text-left" id="connect">Connexion</h2>
+				<h2 class="text-left" id="inscription">Inscription</h2>
+			</legend>
+		<div class="control-group">
+			<label for="email" class="control-label"><i class="fa fa-envelope-o fa-fw"></i>Email</label>
+			<div class="controls">
+				<input class="input-block-level" id="email" type="email" placeholder="exemple@exemple.fr" name="f_email" value="<?=$email?>" />
+			</div>
+		</div>
+		<div class="control-group">
+			<label for="password" class="control-label"><i class="fa fa-lock fa-fw"></i>Mot de passe</label>
+			<div class="controls">
+				<input class="input-block-level" id="password" type="password" placeholder="Mot de passe" name="f_password" />
+			</div>
+		</div>
+
+	<div id="forminscript">
+		<div class="control-group">
+			<label class="control-label" for="nom"><i class="fa fa-user fa-fw"></i>Identification</label>
+			<div class="controls">
+				<input class="input-block-level" type="text" id="nom" name="f_nom" placeholder="Nom" value="<?=$nom?>"/>
+				<input class="input-block-level" type="text" name="f_prenom" placeholder="Pr&eacute;nom" value="<?=$prenom?>"/>
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="birthdate"><i class="fa fa-star fa-fw"></i>Date de Naissance</label>
+			<div class="controls">
+				<input class="input-block-level" type="text" id="birthdate" name="f_birthdate" placeholder="jj/mm/aaaa" value="<?=$birthdate?>"/>
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="adress"><i class="fa fa-home fa-fw"></i> Adresse</label>
+			<div class="controls">
+				<input class="input-block-level" type="text" id="address" name="f_address" placeholder="Adresse" value="<?=$address?>"/>
+				<input class="input-block-level" type="text" name="f_code" placeholder="Code Postal" value="<?=$code?>"/>
+				<input class="input-block-level" type="text" name="f_ville" placeholder="Ville" value="<?=$ville?>"/>
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="tel"><i class="fa fa-phone"></i>
+Telephone</label>
+			<div class="controls">
+				<input class="input-block-level" type="text" id="tel" name="f_tel" value="<?=$tel?>"/>
+			</div>
+		</div>
+	</div>
+
+		<div class="control-group">
+			<div class="controls">
+				<input type="submit" class="btn btn-success" name="f_submit" value="Valider" />
+			</div>
+		</div>
+	</fieldset>
+	</form>
+</div>
+
+
+<?php
+	
+
+	if($_GET["page"]=="form" & $inscription=="OK")
+	{
+		?>
+		<script>			
+			$("#connect").css("display","none");
+			$("#inscription").css("display","block");
+			$("#forminscript").css("display","inline-block");
+		</script>
+<?php
+	}
+	
+?>

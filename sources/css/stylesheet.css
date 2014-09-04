@@ -1,0 +1,43 @@
+/*--- GENERAL ---*/
+body{
+	background-color: #ecf0f1;
+	font-family:'open_sansregular', sans-serif;
+}
+
+.content{
+	color:#2c3e50;
+}
+
+/*--- HEADER ---*/
+
+header{
+	margin-bottom: 5%;
+}
+
+
+/*--- FORM ---*/
+form{
+	width:50%;
+	min-width: 300px;
+	margin: 2% auto;
+}
+#inscription{
+	display: none;
+}
+#forminscript{
+	display: none;
+}
+.input-block-level{
+	line-height: 25px !important;
+	height: 40px !important;
+	margin-bottom: 3% !important;
+}
+
+
+/*--- FOOTER ---*/
+footer{
+	margin-top: 5%;
+	text-align: center;
+	font-size: 0.6em;
+}
+

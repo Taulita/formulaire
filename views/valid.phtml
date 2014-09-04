@@ -1,0 +1,11 @@
+
+<div class="row-fluid">
+	<h4>Merci <?=htmlentities($user->getName())?> pour votre inscription.</h4>
+	<p>Bienvenue sur mon site!</p>
+</div>
+
+<div class="row-fluid">
+	<form action="index.php?page=valid" method="POST">
+		<button class='btn btn-inverse pull-right' type='submit' name='f_logOut'>D&eacute;connexion</button>
+	</form>
+</div>
